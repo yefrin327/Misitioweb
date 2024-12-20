@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isfa.edu.ni</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="logo.png" alt="Logo del Instituto San Francisco de Asís" style="width: 120px; height: auto;">
+    <h1>Instituto San Francisco de Asís</h1>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto San Francisco de Asís</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo para el botón de tres rallitas */
+    .menu-btn {
+      display: none; /* Ocultamos el botón por defecto en pantallas grandes */
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    .menu-btn div {
+      background-color: #333;
+      height: 5px;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+
+    /* Estilo para el menú */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: -250px; /* Menú oculto inicialmente desde la izquierda */
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      transition: left 0.3s ease; /* Deslizar hacia la izquierda */
+      z-index: 999;
+    }
+
+    .menu a {
+      padding: 15px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .menu a:hover {
+      background-color: #575757;
+    }
+
+    /* Cuando el menú está abierto */
+    .menu.open {
+      left: 0; /* El menú se desliza hacia la izquierda (posición 0) */
+    }
+
+    /* Mostrar el menú con tres rallitas en pantallas pequeñas */
+    @media (max-width: 768px) {
+      .menu-btn {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botón de tres rallitas -->
+  <div class="menu-btn" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Menú -->
+  <div class="menu" id="menu">
+    <a href="#home">Inicio</a>
+    <a href="#us">Nosotros</a>
+    <a href="#education">Educación</a>
+    <a href="#admission">Admisión</a>
+    <a href= "#Notice" >Noticias y Eventos</a>
+    <a href="student">Estudiantes</a>
+  </div>
+
+  <script>
+    // Función para abrir y cerrar el menú
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');  // Añadir o quitar la clase "open"
+    }
+  </script>
+
+</body>
+</html>
+
+    </header>
+      <p style="text-align: justify; margin: 20px;">Bienvenidos a la página web oficial de nuestro colegio, un lugar donde la educación se vive con pasión, compromiso y dedicación. En nuestra institución, trabajamos día a día para formar estudiantes íntegros, cultivando valores fundamentales, fomentando el amor por la ciencia y promoviendo la espiritualidad como bases de su desarrollo </p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto San Francisco de Asís</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sección de información */
+    .info-section {
+      padding: 60px;
+      background-color: #3B83BD;
+      text-align: left;
+      max-width: 800px;
+      margin: right;
+      border-radius: 00px; /* Bordes redondeados */
+    }
+
+    /* Imagen antes del título, centrada */
+    .info-section .section-image {
+      display: block;
+      margin: 0 auto 20px; /* Centrado y margen inferior */
+      width: 200px; /* Ajusta el tamaño de la imagen */
+    }
+
+    .info-section h2 {
+      text-align: left;
+      font-size: 30px;
+      color: white;
+      margin-bottom: 0px;
+    }
+    
+.info-section p {
+      text-align: left;
+      font-size: 12px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .info-section li {
+      display: flex;
+      align-items: left;
+      margin-bottom: 00px;
+      font-size: 18px;
+      color: white;
+    }
+
+    /* Estilo para los íconos */
+    .info-section li img {
+      width: 30px; /* Tamaño del ícono */
+      height: 30px;
+      margin-right: 15px; /* Espacio entre el ícono y el texto */
+    }
+    /* Estilo para la imagen centrada en la sección */
+    .info-section .centered-image {
+      display: block;
+      margin: 10px auto; /* Centrado de la imagen */
+      width: 100%; /* Ajustar el tamaño de la imagen */
+      border-radius: 0px; /* Bordes redondeados para la imagen */
+    }
+     /* Estilo para la línea horizontal */
+    .info-section hr {
+      border: 0;
+      height: 2px;
+      background-color: #333; /* Color de la línea */
+      margin: 2px 0; /* Márgenes arriba y abajo */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Sección de información -->
+  <section class="info-section" id="info">
+    <!-- Imagen antes del título -->
+    <img src="sanf.png" alt="Icono Información" class="section-image">
+
+    <!-- Título de la sección -->
+    <h2>Información:</h2>
+    <!-- Titulo del colegio -->
+    <p> Instituto San Francisco de Asís, El Ayote - RACSS</p>
+  
+      <!-- Dirección -->
+      <li>
+        <img src="ubicacion.png" alt="Ubicación">
+        Terminal de Buses, 1 cuadra al N.O, 1 cuadra al O y media cuadra al N.
+      </li>
+      <!-- Horarios de atención -->
+      <li>
+        <img src="reloj.png" alt="Horario">
+        Lunes a Viernes: 7:00 AM - 12:00 PM
+      </li>
+    </ul>
+
+    <!-- Imagen centrada en la sección -->
+    <img src="slogan.png" alt="Imagen del Instituto" class="centered-image">
+<!-- Línea horizontal después de la imagen centrada -->
+    <hr>
+
+  </section>
+
+</body>
+</html>
+
+    <!-- Footer -->
+    <footer>
+      <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto San Francisco de Asís</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Estilo para los enlaces y sus imágenes */
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 15px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .social-links img {
+      width: 40px; /* Ajusta el tamaño de las imágenes */
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+    }
+
+  </style>
+</head>
+<body>
+
+    <!-- Enlaces a redes sociales -->
+    <div class="social-links">
+      <!-- Enlace a Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=61551547499505&mibextid=JRoKGi" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      </a>
+      
+      <!-- Enlace a WhatsApp -->
+      <a href="wa.me/50582052028" target="_blank">
+        <img src="Whats.png" alt="WhatsApp">
+      </a>
+      
+      <!-- Enlace a correo -->
+      <a href="mailto:ipsfa2001@gmail.com" target="_blank">
+        <img src="gmail.png" alt="Correo Electrónico">
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
+
+        <p>&copy; 2024 Instituto San Francisco de Asís. Paz y bien.</p>
+    </footer>
+</body>
+</html>
